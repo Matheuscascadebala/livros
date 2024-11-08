@@ -1,0 +1,98 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #1e1e2e; /* Fundo em tom de preto arroxeado */
+    --branco: #FFFFFF;
+    --roxo: #6a0dad; /* Roxo escuro para botões ou detalhes */
+    --preto: #000000; /* Preto puro para fundo ou destaques */
+    --roxo-degrade: linear-gradient(97.54deg, #3b006a 35.49%, #8c00cc 165.37%);
+    --fonte-principal: "Poppins";
+    --roxo-claro: #9a00e6; /* Roxo mais claro para ênfases */
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--branco); /* Texto branco */
+    margin: 0; /* Remove margem padrão do body */
+}
+
+header, .banner, .carrossel, .tópicos, .contato, .rodapé {
+    background-color: var(--preto); /* Fundo das seções em preto */
+    color: var(--branco); /* Texto em branco */
+}
+
+.banner__titulo, .carrossel__titulo, .tópicos__titulo, .contato__titulo {
+    color: var(--roxo-claro); /* Títulos em roxo claro */
+}
+
+input[type="search"], input[type="email"] {
+    background-color: var(--roxo);
+    border: none;
+    color: var(--branco);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Ajusta a largura do input */
+    max-width: 400px; /* Largura máxima para inputs */
+}
+
+a {
+    color: var(--roxo-claro); /* Links em roxo claro */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+a:hover {
+    color: var(--branco); /* Links em branco ao passar o mouse */
+}
+
+button, .container__botao, .swiper-button-next, .swiper-button-prev {
+    background-color: var(--roxo); /* Botões em roxo */
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px; /* Adiciona padding aos botões */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Indica que é clicável */
+}
+
+button:hover, .container__botao:hover, .swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: var(--roxo-claro); /* Botões em roxo mais claro ao passar o mouse */
+}
+
+.container__imagem {
+    max-width: 150px; /* Ajuste para a largura desejada */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem se necessário */
+}
+
+img {
+        max-height:1000px; /* Limita a altura máxima */
+        width: auto; /* Mantém a largura proporcional */
+}
+
+.card {
+    margin: 20px 0; /* Espaço entre os cards */
+    padding: 15px; /* Adiciona padding interno */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+p {
+    color: var(--branco); /* Texto em branco */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20px; /* Ajusta padding */
+}
+
+/* Estilização do rodapé */
+.rodapé {
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Padding superior e inferior */
+    background-color: var(--preto); /* Fundo preto */
+}
